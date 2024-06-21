@@ -1,0 +1,7 @@
+Mateus,17/06/2024,Carne,Refrigerantes
+w,21/06/2024,Peixe,Acompanhamentos
+w,18/06/2024,Carne,Acompanhamentos + 1.50€
+w,18/06/2024,Peixe,Refrigerantes + 1.00€
+jose,20/06/2024,Peixe,Sobremesa + 0.50€
+jose,19/06/2024,Peixe,Sobremesa + 0.50€
+www,20/06/2024,Carne,Refrigerantes + 1.00€

@@ -1,0 +1,4 @@
+bacalhao abrás,Peixe
+bife de vaca,Carne
+salada de legumes,Vegetariano
+bife de coco,Carne

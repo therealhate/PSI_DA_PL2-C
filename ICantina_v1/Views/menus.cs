@@ -1,80 +1,140 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Windows.Forms;
+using ICantina_v1.Models;
 
-namespace ICantina_v1
+namespace ICantina_v1.Views
 {
-    public partial class MenusForm : Form
+    public partial class menus : Form
     {
-        // Lista de menus para a cantina
-        private List<string> menus = new List<string>
-        {
-            "Carne de Vaca com Batatas",
-            "Frango Grelhado",
-            "Salada de Vegetais",
-            "Carne de Porco com Arroz",
-            "Peixe Assado",
-            "Lasanha Vegetariana"
-        };
+        private List<CantinaMenu> listaMenus;
 
-        public MenusForm()
+        public menus()
         {
             InitializeComponent();
-            // Inicializa a lista de menus na ListBox
-            lstMenus.DataSource = menus;
+            listaMenus = new List<CantinaMenu>();
         }
 
-        private void btn_voltar_Click(object sender, EventArgs e)
+        private void MenusForm_Load(object sender, EventArgs e)
         {
-            this.Hide();
+            CarregarMenus();
         }
 
-        private void btnCarne_Click(object sender, EventArgs e)
+        private void CarregarMenus()
         {
-            // Filtra apenas os menus de carne
-            List<string> carneMenus = new List<string>();
-            foreach (var menu in menus)
+            try
             {
-                if (menu.Contains("Carne"))
+                if (File.Exists("menus.txt"))
                 {
-                    carneMenus.Add(menu);
+                    using (StreamReader reader = new StreamReader("menus.txt"))
+                    {
+                        string line;
+                        while ((line = reader.ReadLine()) != null)
+                        {
+                            string[] dadosMenu = line.Split(',');
+                            if (dadosMenu.Length == 2) // Supondo que o arquivo tenha nome e tipo separados por vírgula
+                            {
+                                var menu = new CantinaMenu
+                                {
+                                    Nome = dadosMenu[0],
+                                    Tipo = dadosMenu[1] // Atribuir o tipo
+                                };
+                                listaMenus.Add(menu);
+                            }
+                        }
+                    }
+                    PreencherListBox(); // Preencher a lista com todos os menus
                 }
             }
-
-            // Atualiza a ListBox para mostrar apenas os menus de carne
-            lstMenus.DataSource = carneMenus;
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao carregar menus: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        private void btn_peixe_Click(object sender, EventArgs e)
+        private void PreencherListBox()
         {
-            // Filtra apenas os menus de carne
-            List<string> peixeMenus = new List<string>();
-            foreach (var menu in menus)
+            lstMenus.Items.Clear();
+            foreach (var menu in listaMenus)
             {
-                if (menu.Contains("Peixe"))
-                {
-                    peixeMenus.Add(menu);
-                }
+                lstMenus.Items.Add($"{menu.Nome}");
             }
-
-            // Atualiza a ListBox para mostrar apenas os menus de carne
-            lstMenus.DataSource = peixeMenus;
         }
 
-        private void btn_vegan_Click(object sender, EventArgs e)
+        private void CriarMenu()
         {
-            // Filtra apenas os menus de carne
-            List<string> veganMenus = new List<string>();
-            foreach (var menu in menus)
+            var novoMenu = new CantinaMenu
             {
-                if (menu.Contains("Vegan") || menu.Contains("Vegetariana") || menu.Contains("Vegetais"))
+                Nome = txt_nome.Text,
+                Tipo = combo_TipoMenu.SelectedItem.ToString()
+            };
+
+            listaMenus.Add(novoMenu);
+            SalvarMenus();
+            PreencherListBox();
+        }
+
+        private void SalvarMenus()
+        {
+            try
+            {
+                using (StreamWriter writer = new StreamWriter("menus.txt"))
                 {
-                    veganMenus.Add(menu);
+                    foreach (var menu in listaMenus)
+                    {
+                        writer.WriteLine($"{menu.Nome},{menu.Tipo}");
+                    }
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao salvar menus: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
-            // Atualiza a ListBox para mostrar apenas os menus de carne
-            lstMenus.DataSource = veganMenus;
+        private void btncarne_Click(object sender, EventArgs e)
+        {
+            FiltrarMenus("Carne");
+        }
+
+        private void btnpeixe_Click(object sender, EventArgs e)
+        {
+            FiltrarMenus("Peixe");
+        }
+
+        private void btnvegan_Click(object sender, EventArgs e)
+        {
+            FiltrarMenus("Vegetariano");
+        }
+
+        private void FiltrarMenus(string tipo)
+        {
+            // Limpa a lista atual
+            lstMenus.Items.Clear();
+
+            // Filtra os menus pelo tipo selecionado
+            foreach (var menu in listaMenus)
+            {
+                if (menu.Tipo == tipo)
+                {
+                    lstMenus.Items.Add($"{menu.Nome}");
+                }
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            CriarMenu();
+        }
+
+        private void btnTodos_Click(object sender, EventArgs e)
+        {
+            lstMenus.Items.Clear();
+            foreach (var menu in listaMenus)
+            {
+                lstMenus.Items.Add($"{menu.Nome}");
+            }
         }
     }
 }
