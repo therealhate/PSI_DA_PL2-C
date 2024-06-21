@@ -1,4 +1,15 @@
-bacalhao abrás,Peixe
-bife de vaca,Carne
-salada de legumes,Vegetariano
-bife de coco,Carne
+Salmão grelhado com molho de limão e alho,Peixe
+Filé mignon ao molho de vinho tinto,Carne
+Risoto de cogumelos com espinafre e parmesão vegano,Vegetariano
+Bacalhau à Gomes de Sá,Peixe
+Costeletas de cordeiro com ervas,Carne
+Curry de grão-de-bico com leite de coco,Vegetariano
+Lasanha de berinjela e abobrinha com tofu e molho de tomate,Vegetariano
+Linguado ao molho de alcaparras,Peixe
+Frango à parmegiana com espaguete ao molho de tomate,Carne
+Atum selado com crosta de gergelim,Peixe
+Bife de chorizo com chimichurri,Carne
+Tacos de lentilha com abacate,Vegetariano
+Feijoada vegana com tofu defumado,Vegetariano
+Tilápia ao molho de coco e curry,Peixe
+Lombo suíno assado com molho de maçã,Carne

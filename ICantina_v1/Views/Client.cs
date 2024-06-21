@@ -14,7 +14,6 @@ namespace ICantina_v1.Models
         public string Nome { get; set; }
         public string Email { get; set; }
         public int Tipo { get; set; }
-
         public string saldo { get; set; }
 
         public string TipoCliente

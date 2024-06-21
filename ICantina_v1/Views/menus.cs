@@ -162,5 +162,27 @@ namespace ICantina_v1.Views
             MessageBox.Show(sb.ToString(), $"Menus de {tipo}", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        private void btn_eliminar_Click(object sender, EventArgs e)
+        {
+            // Verificar se algum menu está selecionado
+            if (lstMenus.SelectedIndex != -1)
+            {
+                // Remover o menu selecionado da lista
+                listaMenus.RemoveAt(lstMenus.SelectedIndex);
+
+                // Salvar os menus após remover um menu
+                SalvarMenus();
+            }
+            else
+            {
+                MessageBox.Show("Selecione um menu para eliminar.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            lstMenus.Items.Clear();
+            foreach (var menu in listaMenus)
+            {
+                lstMenus.Items.Add(menu);
+            }
+        }
     }
 }

@@ -73,6 +73,7 @@ namespace ICantina_v1.Views
             this.btn_eliminarMulta.TabIndex = 5;
             this.btn_eliminarMulta.Text = "Eliminar Multa";
             this.btn_eliminarMulta.UseVisualStyleBackColor = true;
+            this.btn_eliminarMulta.Click += new System.EventHandler(this.btn_eliminarMulta_Click);
             // 
             // multas
             // 

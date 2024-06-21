@@ -1,4 +1,6 @@
-﻿namespace ICantina_v1.Views
+﻿using System;
+
+namespace ICantina_v1.Views
 {
     partial class exibirReservas
     {
@@ -61,6 +63,7 @@
             this.btn_eliminarReserva.TabIndex = 2;
             this.btn_eliminarReserva.Text = "Eliminar Reserva";
             this.btn_eliminarReserva.UseVisualStyleBackColor = true;
+            this.btn_eliminarReserva.Click += new System.EventHandler(this.btn_eliminarReserva_Click);
             // 
             // exibirReservas
             // 
@@ -76,6 +79,8 @@
             this.ResumeLayout(false);
 
         }
+
+        
 
         #endregion
 

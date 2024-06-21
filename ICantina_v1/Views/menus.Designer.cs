@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnTodos = new System.Windows.Forms.Button();
             this.btn_vegan = new System.Windows.Forms.Button();
             this.btn_peixe = new System.Windows.Forms.Button();
             this.btncarne = new System.Windows.Forms.Button();
@@ -39,7 +40,7 @@
             this.button5 = new System.Windows.Forms.Button();
             this.txt_nome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnTodos = new System.Windows.Forms.Button();
+            this.btn_eliminar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,6 +57,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(257, 556);
             this.panel1.TabIndex = 0;
+            // 
+            // btnTodos
+            // 
+            this.btnTodos.Location = new System.Drawing.Point(79, 380);
+            this.btnTodos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTodos.Name = "btnTodos";
+            this.btnTodos.Size = new System.Drawing.Size(96, 28);
+            this.btnTodos.TabIndex = 4;
+            this.btnTodos.Text = "Todos";
+            this.btnTodos.UseVisualStyleBackColor = true;
+            this.btnTodos.Click += new System.EventHandler(this.btnTodos_Click);
             // 
             // btn_vegan
             // 
@@ -159,22 +171,22 @@
             this.label2.TabIndex = 21;
             this.label2.Text = "Nome";
             // 
-            // btnTodos
+            // btn_eliminar
             // 
-            this.btnTodos.Location = new System.Drawing.Point(79, 380);
-            this.btnTodos.Margin = new System.Windows.Forms.Padding(4);
-            this.btnTodos.Name = "btnTodos";
-            this.btnTodos.Size = new System.Drawing.Size(96, 28);
-            this.btnTodos.TabIndex = 4;
-            this.btnTodos.Text = "Todos";
-            this.btnTodos.UseVisualStyleBackColor = true;
-            this.btnTodos.Click += new System.EventHandler(this.btnTodos_Click);
+            this.btn_eliminar.Location = new System.Drawing.Point(839, 391);
+            this.btn_eliminar.Name = "btn_eliminar";
+            this.btn_eliminar.Size = new System.Drawing.Size(75, 23);
+            this.btn_eliminar.TabIndex = 29;
+            this.btn_eliminar.Text = "Eliminar";
+            this.btn_eliminar.UseVisualStyleBackColor = true;
+            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
             // 
             // menus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1023, 623);
+            this.Controls.Add(this.btn_eliminar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.combo_TipoMenu);
             this.Controls.Add(this.button5);
@@ -207,5 +219,6 @@
         private System.Windows.Forms.TextBox txt_nome;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnTodos;
+        private System.Windows.Forms.Button btn_eliminar;
     }
 }

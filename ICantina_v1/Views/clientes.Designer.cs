@@ -31,6 +31,7 @@
             this.listBox_clientes = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.combo_tipoCliente = new System.Windows.Forms.ComboBox();
             this.txt_num = new System.Windows.Forms.TextBox();
@@ -43,7 +44,6 @@
             this.btn_eliminar = new System.Windows.Forms.Button();
             this.btn_marcarReserva = new System.Windows.Forms.Button();
             this.txt_saldo = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.mainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,6 +85,15 @@
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(1051, 365);
             this.mainPanel.TabIndex = 2;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(4, 203);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(43, 16);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Saldo";
             // 
             // label5
             // 
@@ -194,16 +203,7 @@
             this.txt_saldo.Location = new System.Drawing.Point(65, 200);
             this.txt_saldo.Name = "txt_saldo";
             this.txt_saldo.Size = new System.Drawing.Size(173, 22);
-            this.txt_saldo.TabIndex = 21;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(4, 203);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(43, 16);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Saldo";
+            this.txt_saldo.TabIndex = 23;
             // 
             // clientes
             // 
@@ -240,7 +240,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox combo_tipoCliente;
         private System.Windows.Forms.Button btn_marcarReserva;
-        private System.Windows.Forms.TextBox txt_saldo;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txt_saldo;
     }
 }

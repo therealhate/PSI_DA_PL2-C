@@ -14,6 +14,15 @@ namespace ICantina_v1
     public partial class semana : Form
     {
         private int deslocamentoSemana = 0; // Variável para rastrear o deslocamento da semana atual
+        private List<string> pratos; // Armazena os pratos disponíveis
+
+        public semana()
+        {
+            InitializeComponent();
+            AtualizarSemanaAtualEDataDosDias();
+            CarregarPratosDisponiveis();
+            MostrarPratosNaSemana();
+        }
 
         private List<string> LerPratosDoArquivo(string caminhoDoArquivo)
         {
@@ -40,22 +49,24 @@ namespace ICantina_v1
             return pratos;
         }
 
-        public semana()
-        {
-            InitializeComponent();
-            AtualizarSemanaAtualEDataDosDias();
-            CarregarPratosDisponiveis();
-        }
-
-
         private void CarregarPratosDisponiveis()
         {
             // Constrói o caminho para o arquivo menus.txt relativo ao diretório de execução do aplicativo
             string caminhoDoArquivo = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "menus.txt");
+            pratos = LerPratosDoArquivo(caminhoDoArquivo);
+        }
 
-            var pratos = LerPratosDoArquivo(caminhoDoArquivo);
+        private void MostrarPratosNaSemana()
+        {
+            if (pratos == null || pratos.Count == 0)
+            {
+                MessageBox.Show("Nenhum prato disponível para exibição.");
+                return;
+            }
 
-            // Limpa as ListBox antes de adicionar novos itens
+            Random random = new Random();
+            var pratosAleatorios = pratos.OrderBy(x => random.Next()).Take(6).ToList();
+
             listBox1.Items.Clear();
             listBox2.Items.Clear();
             listBox3.Items.Clear();
@@ -63,18 +74,35 @@ namespace ICantina_v1
             listBox5.Items.Clear();
             listBox6.Items.Clear();
 
-            // Preenche todas as ListBox com os pratos disponíveis
-            foreach (var prato in pratos)
-            {
-                listBox1.Items.Add(prato);
-                listBox2.Items.Add(prato);
-                listBox3.Items.Add(prato);
-                listBox4.Items.Add(prato);
-                listBox5.Items.Add(prato);
-                listBox6.Items.Add(prato);
-            }
+            listBox1.Items.Add(QuebrarTexto(pratosAleatorios[0], listBox1));
+            listBox2.Items.Add(QuebrarTexto(pratosAleatorios[1], listBox2));
+            listBox3.Items.Add(QuebrarTexto(pratosAleatorios[2], listBox3));
+            listBox4.Items.Add(QuebrarTexto(pratosAleatorios[3], listBox4));
+            listBox5.Items.Add(QuebrarTexto(pratosAleatorios[4], listBox5));
+            listBox6.Items.Add(QuebrarTexto(pratosAleatorios[5], listBox6));
         }
 
+        private string QuebrarTexto(string texto, ListBox listBox)
+        {
+            // Estimativa da largura média de um caractere, pode ser ajustada conforme necessário
+            int larguraCaracter = 7;
+            int larguraListBox = listBox.Width;
+            int maxCharsPorLinha = larguraListBox / larguraCaracter;
+
+            if (texto.Length <= maxCharsPorLinha)
+                return texto;
+
+            var linhas = new List<string>();
+            for (int i = 0; i < texto.Length; i += maxCharsPorLinha)
+            {
+                if (i + maxCharsPorLinha > texto.Length)
+                    linhas.Add(texto.Substring(i));
+                else
+                    linhas.Add(texto.Substring(i, maxCharsPorLinha));
+            }
+
+            return string.Join(Environment.NewLine, linhas);
+        }
 
         private void AtualizarSemanaAtualEDataDosDias()
         {
@@ -106,102 +134,89 @@ namespace ICantina_v1
         {
             deslocamentoSemana++; // Move para a próxima semana
             AtualizarSemanaAtualEDataDosDias();
+            MostrarPratosNaSemana();
         }
 
         private void AntSemana_Click(object sender, EventArgs e)
         {
             deslocamentoSemana--; // Move para a semana anterior
             AtualizarSemanaAtualEDataDosDias();
+            MostrarPratosNaSemana();
         }
-
 
         private void button3_Click(object sender, EventArgs e)
         {
-
         }
 
         private void Segunda_Click(object sender, EventArgs e)
         {
-
         }
 
         private void Terca_Click(object sender, EventArgs e)
         {
-
         }
 
         private void Quarta_Click(object sender, EventArgs e)
         {
-
         }
 
         private void Quinta_Click(object sender, EventArgs e)
         {
-
         }
 
         private void Sexta_Click(object sender, EventArgs e)
         {
-
         }
 
         private void Sabado_Click(object sender, EventArgs e)
         {
-
         }
 
         private void SemanaAtual_Click(object sender, EventArgs e)
         {
-
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
-
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
-
         }
 
         private void Menu_Click(object sender, EventArgs e)
         {
- 
         }
-
 
         private void Menu2_Click(object sender, EventArgs e)
         {
-
         }
 
         private void Menu3_Click(object sender, EventArgs e)
         {
-
         }
 
         private void Menu4_Click(object sender, EventArgs e)
         {
-
         }
 
         private void Menu5_Click(object sender, EventArgs e)
         {
-
         }
 
         private void Menu6_Click(object sender, EventArgs e)
         {
-
         }
 
         private void Menu_SelectedIndexChanged(object sender, EventArgs e)
         {
-
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void semana_Load(object sender, EventArgs e)
         {
 
         }

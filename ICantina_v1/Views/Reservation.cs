@@ -13,10 +13,11 @@ namespace ICantina_v1.Models
         public DateTime Dia { get; set; }
         public string Menu { get; set; }
         public string Extras { get; set; }
+        public bool IsActive { get; set; }
 
         public override string ToString()
         {
-            return $"{Client.Nome} - {Dia.ToShortDateString()} - {Menu} - {Extras}";
+            return $"{Client.Nome} - {Dia.ToShortDateString()} - {Menu} - {Extras} - {IsActive}";
         }
     }
 }
