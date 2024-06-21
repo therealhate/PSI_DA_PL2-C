@@ -1,0 +1,41 @@
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento de aplicações\ICantina_projeto\ICantina\ICantina_v1\bin\Debug\ICantina_v1.exe.config
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento de aplicações\ICantina_projeto\ICantina\ICantina_v1\bin\Debug\ICantina_v1.exe
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento de aplicações\ICantina_projeto\ICantina\ICantina_v1\bin\Debug\ICantina_v1.pdb
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento de aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina_v1.csproj.AssemblyReference.cache
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento de aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina_v1.Properties.Resources.resources
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento de aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina_v1.csproj.GenerateResource.cache
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento de aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina_v1.csproj.CoreCompileInputs.cache
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento de aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina_v1.exe
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento de aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina_v1.pdb
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento de aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina_v1.semana.resources
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento de aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\FormPrincipal.formPrincipal.resources
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento de aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina_v1.Views.reservas.resources
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento de aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina_v1.Views.clientes.resources
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento de aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina_v1.Views.multas.resources
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento de aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina_v1.MenusForm.resources
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento de aplicações\ICantina_projeto\ICantina\ICantina_v1\bin\Debug\EntityFramework.dll
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento de aplicações\ICantina_projeto\ICantina\ICantina_v1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento de aplicações\ICantina_projeto\ICantina\ICantina_v1\bin\Debug\EntityFramework.xml
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento de aplicações\ICantina_projeto\ICantina\ICantina_v1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento de aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina.507C91E2.Up2Date
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento_de_aplicações\ICantina_projeto\ICantina\ICantina_v1\bin\Debug\ICantina_v1.exe.config
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento_de_aplicações\ICantina_projeto\ICantina\ICantina_v1\bin\Debug\ICantina_v1.exe
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento_de_aplicações\ICantina_projeto\ICantina\ICantina_v1\bin\Debug\ICantina_v1.pdb
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento_de_aplicações\ICantina_projeto\ICantina\ICantina_v1\bin\Debug\EntityFramework.dll
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento_de_aplicações\ICantina_projeto\ICantina\ICantina_v1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento_de_aplicações\ICantina_projeto\ICantina\ICantina_v1\bin\Debug\EntityFramework.xml
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento_de_aplicações\ICantina_projeto\ICantina\ICantina_v1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento_de_aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina_v1.csproj.AssemblyReference.cache
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento_de_aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina_v1.Views.clientes.resources
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento_de_aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina_v1.Views.multas.resources
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento_de_aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina_v1.Views.reservas.resources
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento_de_aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina_v1.semana.resources
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento_de_aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\FormPrincipal.formPrincipal.resources
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento_de_aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina_v1.Properties.Resources.resources
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento_de_aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina_v1.MenusForm.resources
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento_de_aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina_v1.csproj.GenerateResource.cache
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento_de_aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina_v1.csproj.CoreCompileInputs.cache
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento_de_aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina.507C91E2.Up2Date
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento_de_aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina_v1.exe
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento_de_aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina_v1.pdb
+C:\Users\Mateus\Desktop\Escola\2semestre\desenvolvimento_de_aplicações\ICantina_projeto\ICantina\ICantina_v1\obj\Debug\ICantina_v1.Views.clientes_add.resources
