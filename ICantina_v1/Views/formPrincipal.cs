@@ -110,7 +110,12 @@ namespace ICantina_v1.Views
 
         private void Form_Load(object sender, EventArgs e)
         {
-            //cenas
+            ShowForm(new semana());
+        }
+
+        private void mainPanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

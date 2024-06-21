@@ -47,11 +47,11 @@ namespace ICantina_v1.Views
             // 
             // mainPanel
             // 
-            this.mainPanel.Location = new System.Drawing.Point(0, 92);
-            this.mainPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.mainPanel.Location = new System.Drawing.Point(0, 75);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(1150, 633);
+            this.mainPanel.Size = new System.Drawing.Size(862, 514);
             this.mainPanel.TabIndex = 0;
+            this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
             // 
             // panel2
             // 
@@ -61,18 +61,16 @@ namespace ICantina_v1.Views
             this.panel2.Controls.Add(this.btn_reservas);
             this.panel2.Controls.Add(this.btn_multas);
             this.panel2.Controls.Add(this.btn_menus);
-            this.panel2.Location = new System.Drawing.Point(17, 39);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(13, 32);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1112, 59);
+            this.panel2.Size = new System.Drawing.Size(834, 48);
             this.panel2.TabIndex = 6;
             // 
             // btn_semanas
             // 
-            this.btn_semanas.Location = new System.Drawing.Point(250, 18);
-            this.btn_semanas.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_semanas.Location = new System.Drawing.Point(188, 15);
             this.btn_semanas.Name = "btn_semanas";
-            this.btn_semanas.Size = new System.Drawing.Size(100, 28);
+            this.btn_semanas.Size = new System.Drawing.Size(75, 23);
             this.btn_semanas.TabIndex = 8;
             this.btn_semanas.Text = "Semana";
             this.btn_semanas.UseVisualStyleBackColor = true;
@@ -80,10 +78,9 @@ namespace ICantina_v1.Views
             // 
             // btn_clientes
             // 
-            this.btn_clientes.Location = new System.Drawing.Point(682, 18);
-            this.btn_clientes.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_clientes.Location = new System.Drawing.Point(512, 15);
             this.btn_clientes.Name = "btn_clientes";
-            this.btn_clientes.Size = new System.Drawing.Size(100, 28);
+            this.btn_clientes.Size = new System.Drawing.Size(75, 23);
             this.btn_clientes.TabIndex = 7;
             this.btn_clientes.Text = "Clientes";
             this.btn_clientes.UseVisualStyleBackColor = true;
@@ -91,10 +88,9 @@ namespace ICantina_v1.Views
             // 
             // btn_reservas
             // 
-            this.btn_reservas.Location = new System.Drawing.Point(574, 18);
-            this.btn_reservas.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_reservas.Location = new System.Drawing.Point(430, 15);
             this.btn_reservas.Name = "btn_reservas";
-            this.btn_reservas.Size = new System.Drawing.Size(100, 28);
+            this.btn_reservas.Size = new System.Drawing.Size(75, 23);
             this.btn_reservas.TabIndex = 6;
             this.btn_reservas.Text = "Reservas";
             this.btn_reservas.UseVisualStyleBackColor = true;
@@ -102,10 +98,9 @@ namespace ICantina_v1.Views
             // 
             // btn_multas
             // 
-            this.btn_multas.Location = new System.Drawing.Point(466, 18);
-            this.btn_multas.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_multas.Location = new System.Drawing.Point(350, 15);
             this.btn_multas.Name = "btn_multas";
-            this.btn_multas.Size = new System.Drawing.Size(100, 28);
+            this.btn_multas.Size = new System.Drawing.Size(75, 23);
             this.btn_multas.TabIndex = 5;
             this.btn_multas.Text = "Multas";
             this.btn_multas.UseVisualStyleBackColor = true;
@@ -113,10 +108,9 @@ namespace ICantina_v1.Views
             // 
             // btn_menus
             // 
-            this.btn_menus.Location = new System.Drawing.Point(358, 18);
-            this.btn_menus.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_menus.Location = new System.Drawing.Point(268, 15);
             this.btn_menus.Name = "btn_menus";
-            this.btn_menus.Size = new System.Drawing.Size(100, 28);
+            this.btn_menus.Size = new System.Drawing.Size(75, 23);
             this.btn_menus.TabIndex = 4;
             this.btn_menus.Text = "Menus";
             this.btn_menus.UseVisualStyleBackColor = true;
@@ -129,17 +123,15 @@ namespace ICantina_v1.Views
             this.panel1.Controls.Add(this.user);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(1, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1149, 49);
+            this.panel1.Size = new System.Drawing.Size(862, 40);
             this.panel1.TabIndex = 5;
             // 
             // btn_mudarUser
             // 
-            this.btn_mudarUser.Location = new System.Drawing.Point(1070, 6);
-            this.btn_mudarUser.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_mudarUser.Location = new System.Drawing.Point(802, 5);
             this.btn_mudarUser.Name = "btn_mudarUser";
-            this.btn_mudarUser.Size = new System.Drawing.Size(67, 25);
+            this.btn_mudarUser.Size = new System.Drawing.Size(50, 20);
             this.btn_mudarUser.TabIndex = 8;
             this.btn_mudarUser.Text = "Mudar";
             this.btn_mudarUser.UseVisualStyleBackColor = true;
@@ -149,10 +141,9 @@ namespace ICantina_v1.Views
             // 
             this.user.AutoSize = true;
             this.user.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.user.Location = new System.Drawing.Point(976, 7);
-            this.user.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.user.Location = new System.Drawing.Point(732, 6);
             this.user.Name = "user";
-            this.user.Size = new System.Drawing.Size(86, 20);
+            this.user.Size = new System.Drawing.Size(70, 16);
             this.user.TabIndex = 3;
             this.user.Text = "Username";
             // 
@@ -161,22 +152,20 @@ namespace ICantina_v1.Views
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Sans Serif Collection", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(20, 4);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(15, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 47);
+            this.label1.Size = new System.Drawing.Size(112, 37);
             this.label1.TabIndex = 2;
             this.label1.Text = "ICantina";
             // 
             // formPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1151, 724);
+            this.ClientSize = new System.Drawing.Size(863, 588);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.mainPanel);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "formPrincipal";

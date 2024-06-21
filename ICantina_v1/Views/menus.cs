@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Text;
 using System.Windows.Forms;
 using ICantina_v1.Models;
 
@@ -14,6 +16,13 @@ namespace ICantina_v1.Views
         {
             InitializeComponent();
             listaMenus = new List<CantinaMenu>();
+        }
+
+        // Seus outros métodos existentes aqui...
+
+        public List<CantinaMenu> ObterMenusDisponiveis()
+        {
+            return listaMenus;
         }
 
         private void MenusForm_Load(object sender, EventArgs e)
@@ -136,5 +145,22 @@ namespace ICantina_v1.Views
                 lstMenus.Items.Add($"{menu.Nome}");
             }
         }
+
+        public void ExibirMenusPorTipo(string tipo)
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (var menu in listaMenus.Where(m => m.Tipo.Equals(tipo, StringComparison.OrdinalIgnoreCase)))
+            {
+                sb.AppendLine($"{menu.Nome} - {menu.Tipo}");
+            }
+
+            if (sb.Length == 0)
+            {
+                sb.AppendLine("Nenhum menu encontrado.");
+            }
+
+            MessageBox.Show(sb.ToString(), $"Menus de {tipo}", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
     }
 }
